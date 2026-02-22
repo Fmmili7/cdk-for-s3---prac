@@ -1,0 +1,9 @@
+services:
+  cdk:
+    build: .
+    working_dir: /work
+    volumes:
+      - ./cdk:/work
+      - ${USERPROFILE}/.aws:/root/.aws:ro
+    environment:
+      - AWS_SDK_LOAD_CONFIG=1
