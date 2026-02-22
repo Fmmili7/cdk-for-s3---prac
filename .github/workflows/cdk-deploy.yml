@@ -39,6 +39,6 @@ jobs:
         working-directory: cdk
         run: npx cdk bootstrap --require-approval never
 
-      - name: CDK deploy
+      - name: CDK destroy
         working-directory: cdk
-        run: npx cdk deploy --require-approval never
+        run: npx cdk destory --require-approval never
