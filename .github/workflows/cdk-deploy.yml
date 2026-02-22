@@ -41,4 +41,4 @@ jobs:
 
       - name: CDK destroy
         working-directory: cdk
-        run: npx cdk destory --require-approval never
+        run: npx cdk destroy --require-approval never
